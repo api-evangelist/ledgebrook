@@ -1,0 +1,64 @@
+generated: '2026-08-01'
+method: probed
+source: live HTTP probes of the Ledgebrook web host
+host: https://www.ledgebrook.com
+notes: >-
+  Ledgebrook operates no public API host. DNS enumeration (certificate transparency
+  via crt.sh plus a direct sweep of ~30 common API hostnames) found only
+  www.ledgebrook.com (Webflow marketing site), go.ledgebrook.com (a Bitly branded
+  short-link domain) and two hostnames with issued certificates but no live DNS A
+  record: edge.ledgebrook.com and workbench.ledgebrook.com — the latter matching the
+  "underwriting workbench" described in company materials. No /.well-known document
+  is served. Every path below returned 404 from the Webflow site.
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/oauth-protected-resource
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+- path: /.well-known/agent-card.json
+  status: 404
+- path: /.well-known/agent.json
+  status: 404
+contract_discovery:
+  result: none
+  probed_hosts:
+  - www.ledgebrook.com
+  - ledgebrook.com
+  - api.ledgebrook.com (NXDOMAIN)
+  - docs.ledgebrook.com (NXDOMAIN)
+  - developer.ledgebrook.com (NXDOMAIN)
+  - app.ledgebrook.com (NXDOMAIN)
+  - portal.ledgebrook.com (NXDOMAIN)
+  - edge.ledgebrook.com (cert issued, no A record)
+  - workbench.ledgebrook.com (cert issued, no A record)
+  paths_probed:
+  - /openapi.json
+  - /openapi.yaml
+  - /swagger.json
+  - /api-docs
+  - /llms.txt
+  openapi: none
+  graphql: none
+  mcp: none
+  agent_card: none
+  registries:
+    npm: 0 results
+    pypi: 404
+    rubygems: 404
+    packagist: 404
+    github_org: no ledgebrook organization
+  vendor_note: >-
+    Ledgebrook's policy administration runs on Socotra Connected Core (announced
+    August 2022, live June 2023, implemented by DataArt). The open APIs referenced in
+    that partnership are Socotra's product APIs, not a Ledgebrook-published contract;
+    they are catalogued under the Socotra provider, not here.

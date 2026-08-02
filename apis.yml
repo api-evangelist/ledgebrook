@@ -1,8 +1,21 @@
 aid: ledgebrook
 name: Ledgebrook
-description: 'Ledgebrook is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Ledgebrook is a technology-enabled excess and surplus (E&S) lines managing
+  general agent (MGA) and reinsurance platform headquartered in Massachusetts and founded
+  by Gage Caligaris. It underwrites specialty commercial casualty risk — general liability,
+  professional liability, and cyber — exclusively through wholesale brokers, competing
+  on quote speed rather than direct-to-consumer distribution. Its stack pairs a proprietary
+  underwriting workbench with machine-learning models applied across submission intake,
+  triage, data architecture, and pricing, backed by an engineering, data-science and
+  product organization of 70+ people, with policy administration running on Socotra.
+  Ledgebrook Re extends the business into delegated-authority reinsurance with London
+  and Dubai operations. The company closed an oversubscribed Series C funding round in
+  June 2025 and has appeared on the CB Insights 50 Most Innovative Insurtech Startups
+  list. As of this profiling pass Ledgebrook publishes no public developer portal, API
+  documentation, or machine-readable API contract — its broker quoting platform is a
+  private, credentialed surface.'
 url: https://raw.githubusercontent.com/api-evangelist/ledgebrook/refs/heads/main/apis.yml
+image: https://cdn.prod.website-files.com/63ebe9ba92c291dd8792fe4c/67ea881e9ab2f5f219dbe42a_ledgebrook-og.jpg
 x-type: company
 x-source: harvest:secondary-market
 x-tier: stub
@@ -12,6 +25,15 @@ created: '2026-08-01'
 modified: '2026-08-01'
 tags:
 - Company
+- Insurance
+- Insurtech
+- Excess and Surplus
+- Specialty Insurance
+- Managing General Agent
+- Reinsurance
+- Commercial Liability
+- Cyber Insurance
+- Underwriting
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +41,38 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/ledgebrook-domain-security.yml
+- type: WellKnown
+  url: well-known/ledgebrook-well-known.yml
+- type: LLMsTxt
+  url: llms/ledgebrook-llms.txt
 - type: Website
+  url: https://www.ledgebrook.com/
+- type: Products
+  url: https://www.ledgebrook.com/products
+- type: About
+  url: https://www.ledgebrook.com/about
+- type: Press
+  url: https://www.ledgebrook.com/press
+- type: Support
+  url: https://www.ledgebrook.com/contact
+- type: Careers
+  url: https://www.ledgebrook.com/careers
+- type: TermsOfService
+  url: https://www.ledgebrook.com/terms-of-use
+- type: PrivacyPolicy
+  url: https://www.ledgebrook.com/privacy
+- type: Complaints
+  url: https://www.ledgebrook.com/complaints
+- type: Claims
+  url: https://www.ledgebrook.com/claims
+- type: LinkedIn
+  url: https://www.linkedin.com/company/ledgebrook-insurance
+- type: SecondaryMarket
   url: https://forgeglobal.com/ledgebrook_stock/
+x-enrichment:
+  date: '2026-08-01'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
