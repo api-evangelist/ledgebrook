@@ -15,6 +15,17 @@ description: 'Ledgebrook is a technology-enabled excess and surplus (E&S) lines 
   documentation, or machine-readable API contract — its broker quoting platform is a
   private, credentialed surface.'
 url: https://raw.githubusercontent.com/api-evangelist/ledgebrook/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://cdn.prod.website-files.com/63ebe9ba92c291dd8792fe4c/67ea881e9ab2f5f219dbe42a_ledgebrook-og.jpg
 x-type: company
 x-source: harvest:secondary-market
