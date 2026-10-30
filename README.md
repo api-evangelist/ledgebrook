@@ -64,30 +64,82 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Ledgebrook is a technology-enabled excess and surplus (E&S) lines managing general agent (MGA) and
-reinsurance platform founded by Gage Caligaris and headquartered in Massachusetts. It underwrites
-specialty commercial casualty risk — general liability, professional liability, and cyber —
-exclusively through wholesale brokers, competing on quoting speed rather than direct-to-consumer
-distribution. Ledgebrook Re extends the business into delegated-authority reinsurance from London
-and Dubai.
+Ledgebrook is a technology-enabled excess and surplus (E&S) lines managing general agent (MGA) and reinsurance platform headquartered in Massachusetts and founded by Gage Caligaris. It underwrites specialty commercial casualty risk — general liability, professional liability, and cyber — exclusively through wholesale brokers, competing on quote speed rather than direct-to-consumer distribution. Its stack pairs a proprietary underwriting workbench with machine-learning models applied across submission intake, triage, data architecture, and pricing, backed by an engineering, data-science and product organization of 70+ people, with policy administration running on Socotra. Ledgebrook Re extends the business into delegated-authority reinsurance with London and Dubai operations. The company closed an oversubscribed Series C funding round in June 2025 and has appeared on the CB Insights 50 Most Innovative Insurtech Startups list. As of this profiling pass Ledgebrook publishes no public developer portal, API documentation, or machine-readable API contract — its broker quoting platform is a private, credentialed surface.
 
-- https://www.ledgebrook.com/
-- https://forgeglobal.com/ledgebrook_stock/ (secondary market listing)
+**Areas:** Company · Insurance · Insurtech · Excess and Surplus · Specialty Insurance · Managing General Agent · Reinsurance · Commercial Liability · Cyber Insurance · Underwriting
 
-## API surface
+## Ledgebrook on APIs.io
 
-Ledgebrook publishes **no public API, developer portal, or machine-readable API contract**. Contract
-discovery (OpenAPI, GraphQL, MCP, A2A agent card, `/.well-known/*`, package registries, GitHub) was
-run against every resolvable host and returned no hits — see
-[`well-known/ledgebrook-well-known.yml`](well-known/ledgebrook-well-known.yml) for the full probe
-record. Its broker quoting platform and underwriting workbench are private, credentialed surfaces,
-and policy administration runs on Socotra Connected Core; the "open APIs" cited in that partnership
-are Socotra's, catalogued under the Socotra provider.
+Everything profiled for Ledgebrook is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/ledgebrook/](https://apis.io/providers/ledgebrook/)** — or go straight to one of the APIs or properties below.
 
-## Artifacts
+### Published properties
 
-| Artifact | File | Method |
-|---|---|---|
-| Well-Known / contract discovery | `well-known/ledgebrook-well-known.yml` | probed |
-| Domain security | `security/ledgebrook-domain-security.yml` | probed |
-| llms.txt | `llms/ledgebrook-llms.txt` | generated |
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Ledgebrook Domain Security](https://apis.io/security/ledgebrook/ledgebrook-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.ledgebrook.com/)
+- [Support](https://www.ledgebrook.com/contact)
+- [Terms of service](https://www.ledgebrook.com/terms-of-use)
+- [Privacy policy](https://www.ledgebrook.com/privacy)
+
+## API Evangelist rating
+
+**Kin Score 10.2** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 56.3 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 4.8 |
+| Access clarity | 21.1 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 12.3** — Insurance
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/ledgebrook/](https://apis.io/providers/ledgebrook/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Ledgebrook: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/ledgebrook/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
